@@ -18,6 +18,14 @@
     #searchInput {
         border-radius: 35px;
         border-width: 1px;
+        border-top: 1px solid #4e535f;
+        border-color: rgb(117, 128, 128);
         width: 500px;
         height: 25px;
+        background: 
+        url('icons8-search-25.png') no-repeat 10px center,
+        url('icons8-keyboard-32.png') no-repeat 40px /* Add more icons as needed */
+        url("icons8-microphone-24.png") no-repeat 70px  ;
+      background-size: 20px 20px, 20px 20px; /* Adjust size of each icon */
     }
+    
