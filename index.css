@@ -1,0 +1,23 @@
+.google-logo {
+    width: 500px;
+    height: auto;
+    }
+.header__left {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 55vh; /* Full height of viewport */
+    }
+    .search-container {
+        width: fit-content;
+        margin: auto;
+        text-align: center;
+        margin-top: 0;
+        border: 0;
+    }
+    #searchInput {
+        border-radius: 35px;
+        border-width: 1px;
+        width: 500px;
+        height: 25px;
+    }
