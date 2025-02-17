@@ -28,7 +28,7 @@
         url('icons8-keyboard-32.png') no-repeat 430px, /* Add more icons as needed */
         url("icons8-microphone-24.png") no-repeat 470px ;
       background-size: 20px 20px, 20px 20px; /* Adjust size of each icon */
-        text-indent: 40px; /* Adjust the value as needed */
+        text-indent: 35px; /* Adjust the value as needed */
       
     }
     .search__btn1 {
