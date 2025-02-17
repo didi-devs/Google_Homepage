@@ -1,58 +1,76 @@
 .google-logo {
-    width: 500px;
+    max-width: 500px;
     height: auto;
+    width: auto;
     }
 .header__left {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    height: 50vh; /* Full height of viewport */
+    min-height: 45vh; /* Full height of viewport */
+    flex-direction: column;
     }
     .search-container {
-        width: fit-content;
-        margin: auto;
+        width: 90%;
+        max-width: 580px;
+        margin: 20px auto;
         text-align: center;
-        margin-top: 0;
         border: 0;
     }
     #searchInput {
+        box-sizing: border-box;
         border-radius: 35px;
-        border-width: 1px;
-        border-top: 1px solid #4e535f;
-        border-color: rgb(117, 128, 128);
-        margin-top: 1px;
-        width: 500px;
-        height: 25px;
+        border: 1px solid rgb(117, 128, 128);
+        width: 100%;
+        height: 40px;
+        padding-left: 40px;
         background: 
         url('icons8-search-25.png') no-repeat 15px center,
-        url('icons8-keyboard-32.png') no-repeat 430px, /* Add more icons as needed */
-        url("icons8-microphone-24.png") no-repeat 470px ;
+        url('icons8-keyboard-32.png') no-repeat 470px, /* Add more icons as needed */
+        url("icons8-microphone-24.png") no-repeat 520px ;
       background-size: 20px 20px, 20px 20px; /* Adjust size of each icon */
-        text-indent: 35px; /* Adjust the value as needed */
+        text-indent: 0; /* Adjust the value as needed */
       
     }
-    .search__btn1 {
+    .search__btn1, .search__btn2 {
         background-color: #f2f2f2;
         border: 0;
-        padding: 5px;
-        padding-bottom: 30px;
-        padding-top: 15px;
-        padding-left: 10px;
-        padding-right: 10px;
-        height: 25px;
-        margin-top: 40px;
-        margin-left: 500px;
+        padding: 10px 20px; /* Adjust padding */
+        height: auto; /* Let height adjust to content */
+        white-space: nowrap; 
+        cursor: pointer;
+    }
+    .search__btn1 {
+        margin-left: 430px;
+        margin-top: 30px;
     }
     .search__btn2 {
-        background-color: #f2f2f2;
-        border: 0;
-        padding: 5px;
-        padding-bottom: 30px;
-        padding-top: 15px;
-        padding-left: 10px;
-        padding-right: 10px ;
-        height: 25px;
-        margin-top: 40px;
-        margin-left: 50px;
+        margin-left: 80px;
+        margin-top: 30px;
     }
-    
+
+    /* Media query for smaller screens */
+@media (max-width: 768px) {
+    .header__left {
+        min-height: 70vh; /* Adjust min-height for smaller screens */
+    }
+
+    .search__btn1, .search__btn2 {
+        margin: 10px; /* Reduce margin on smaller screens */
+        width: 45%; /* Make buttons take up almost half the width */
+    }
+
+    #searchInput {
+        padding-left: 40px; /* Adjust padding for icon */
+        background-position: 10px center, right 40px center, right 10px center;
+    }
+
+    .search__btn-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search__btn1, .search__btn2 {
+        width: 90%; /* Make buttons take up almost half the width */
+    }
+}
