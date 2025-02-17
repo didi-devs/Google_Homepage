@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    height: 55vh; /* Full height of viewport */
+    height: 50vh; /* Full height of viewport */
     }
     .search-container {
         width: fit-content;
@@ -20,21 +20,39 @@
         border-width: 1px;
         border-top: 1px solid #4e535f;
         border-color: rgb(117, 128, 128);
+        margin-top: 1px;
         width: 500px;
         height: 25px;
         background: 
-        url('icons8-search-25.png') no-repeat 10px center,
-        url('icons8-keyboard-32.png') no-repeat 440px, /* Add more icons as needed */
+        url('icons8-search-25.png') no-repeat 15px center,
+        url('icons8-keyboard-32.png') no-repeat 430px, /* Add more icons as needed */
         url("icons8-microphone-24.png") no-repeat 470px ;
       background-size: 20px 20px, 20px 20px; /* Adjust size of each icon */
+        text-indent: 40px; /* Adjust the value as needed */
+      
     }
     .search__btn1 {
         background-color: #f2f2f2;
         border: 0;
         padding: 5px;
         padding-bottom: 30px;
-        padding-top: 10px;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
         height: 25px;
-        margin-left: 15px;
+        margin-top: 40px;
+        margin-left: 500px;
+    }
+    .search__btn2 {
+        background-color: #f2f2f2;
+        border: 0;
+        padding: 5px;
+        padding-bottom: 30px;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px ;
+        height: 25px;
+        margin-top: 40px;
+        margin-left: 50px;
     }
     
